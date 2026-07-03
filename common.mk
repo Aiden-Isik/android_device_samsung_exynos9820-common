@@ -98,6 +98,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
+# Gralloc
+$(call soong_config_set_bool,libui,legacy_gralloc,true)
+
 # Graphics
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
