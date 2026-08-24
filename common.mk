@@ -272,6 +272,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung_slsi-linaro/exynos/libaudio/audiohal \
     hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3
 
+$(call soong_config_set_bool,libui,legacy_gralloc,true)
+
 # S Pen
 ifeq ($(TARGET_HAVE_SPEN),true)
 PRODUCT_PACKAGES += \
